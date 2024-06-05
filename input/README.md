@@ -1,2 +1,2 @@
-# audio-slicer
+# input directory
  
