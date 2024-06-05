@@ -1,0 +1,5 @@
+Audio Filename: "audio.mp3"
+Song Pattern: "song_number - song_name start_time"
+Album Artist(s): "artist"
+Album Title: "title"
+Cover Art Filename: "image.png"
