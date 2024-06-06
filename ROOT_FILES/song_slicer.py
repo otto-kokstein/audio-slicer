@@ -17,6 +17,8 @@ def slice_audio() -> None:
     # New directory to songs
     SONGS_DIRECTORY_PATH: str = str(
         Path(ROOT_PATH, f"output/{CONFIG_INFO['Album Title']}").resolve()
+    ) if CONFIG_INFO['Album Title'] != "" else str(
+        Path(ROOT_PATH, f"output/").resolve()
     )
 
     # Create new directory for songs if it doesn't already exist
