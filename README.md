@@ -42,9 +42,13 @@ On each line, replace **only** the text between the quotation marks.
 - The *Audio Filename* value tells the tool which audio file it should load. **Do not** include the path to the file, only its name and extension (the file must be located in the `input` directory).
 
 - The *Song Pattern* value tells the tool how the audio parts in the `songs.txt` file are defined. For example, if we were to define an audio part in the `songs.txt` file like this:
-  > 1 - Lorem Ipsum 00:00
+  ```
+  1 - Lorem Ipsum 00:00
+  ```
   then, the *Song Pattern* value would have to look this:
-  > song_number - song_name start_time
+  ```
+  song_number - song_name start_time
+  ```
   When defining a custom pattern, use the keyword **song_number** for the audio part's number, **song_name** for its name and **start_time** for its start time.
 
   **All audio parts in the `songs.txt` file should be defined with the same pattern.**
