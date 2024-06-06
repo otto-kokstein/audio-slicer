@@ -54,8 +54,14 @@ On each line, replace **only** the text between the quotation marks.
   **All audio parts in the `songs.txt` file should be defined with the same pattern.**
   
   Note: You can use words and symbols in the audio parts definitions and patterns, e.g. like this:
-  Audio part definition: > Song #1. Lorem Ipsum, starting at 00:00!
-  Pattern: > Song #song_number. song_name, starting at start_time!
+  Audio part definition:
+  ```
+  Song #1. Lorem Ipsum, starting at 00:00!
+  ```
+  Pattern:
+  ```
+  Song #song_number. song_name, starting at start_time!
+  ```
 
 - The *Album Artist(s)* value tells the tool which artists it should write into the audio parts' metadata. This value can be empty.
 
