@@ -16,10 +16,12 @@ Next, open `songs.txt`. Each audio part must occupy exactly one line. The line m
 
 The audio part definitions in the `songs.txt` file should look like this (with your own custom names and times):
 
-> 1 - Lorem Ipsum 00:00
-> 2 - Dolor Sit 07:32
-> 3 - Amet Consectetur 58:17
-> 4 - Adipiscing 02:03:21
+```
+1 - Lorem Ipsum 00:00
+2 - Dolor Sit 07:32
+3 - Amet Consectetur 58:17
+4 - Adipiscing 02:03:21
+```
 
 ### 3. Config
 
@@ -27,11 +29,13 @@ Now, open `config.txt`, where you will define how the tool will interpret and sa
 
 By default, the `config.txt` file looks like this:
 
-> Audio Filename: "audio.mp3"
-> Song Pattern: "song_number - song_name start_time"
-> Album Artist(s): "artist"
-> Album Title: "title"
-> Cover Art Filename: "image.png"
+```
+Audio Filename: "audio.mp3"
+Song Pattern: "song_number - song_name start_time"
+Album Artist(s): "artist"
+Album Title: "title"
+Cover Art Filename: "image.png"
+```
 
 On each line, replace **only** the text between the quotation marks.
 
@@ -67,4 +71,4 @@ The audio parts created by the tool will be located in the `output` directory (i
 
 Thank you for using my tool.
 
-If you find a bug or would like help, feel free to contact me.
+If you find a bug, feel free to create a pull request. If you'd like help, feel free to contact me.
