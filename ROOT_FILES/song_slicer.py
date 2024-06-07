@@ -25,6 +25,15 @@ def slice_audio() -> None:
     if not os.path.exists(SONGS_DIRECTORY_PATH):
         os.makedirs(SONGS_DIRECTORY_PATH)
 
+    # Omit cover art if it wasn't provided or the file doesn't exist
+    cover_art_filepath: str | None = str(
+        Path(ROOT_PATH, f"input/{CONFIG_INFO['Cover Art Filename']}").resolve()
+    )
+    if len(CONFIG_INFO["Cover Art Filename"]) == 0 or not os.path.exists(
+        cover_art_filepath
+    ):
+        cover_art_filepath = None
+
     for song_number, (song_name, start_time, end_time) in enumerate(SONGS):
         segment: pd.AudioSegment = SOURCE_FILE[
             start_time : (
@@ -41,9 +50,7 @@ def slice_audio() -> None:
                 "artist": CONFIG_INFO["Album Artist(s)"],
                 "album": CONFIG_INFO["Album Title"],
             },
-            cover=str(
-                Path(ROOT_PATH, f"input/{CONFIG_INFO['Cover Art Filename']}").resolve()
-            ),
+            cover=cover_art_filepath,
         )
 
     print("Audio slicing finished successfully.")
