@@ -12,7 +12,7 @@ This tool requires an external Python module pydub and FFmpeg. FFmpeg can be ins
 
 ### 1. Input directory
 
-To slice an audio file, paste it into the `input` directory. Also paste the image that will be used in the new audio files' metadata there, e.g. the album cover art.
+To slice an audio file, paste it into the `input` directory. If you want the newly created audio parts to have a cover art, also paste this cover art image into the `input` directory.
 
 ### 2. Definition of audio parts
 
@@ -71,7 +71,7 @@ On each line, replace **only** the text between the quotation marks.
 
 - The *Album Title* value tells the tool which album the audio parts come from. The album name is written into the audio parts' metadata. This value can be empty.
 
-- The *Cover Art Filename* value tells the tool which image it should use in the audio parts' metadata. **Do not** include the path to the file, only its name and extension (the file must be located in the `input` directory).
+- The *Cover Art Filename* value tells the tool which image it should use in the audio parts' metadata. **Do not** include the path to the file, only its name and extension (the file must be located in the `input` directory). This value can be empty.
 
 ### 4. Run the tool
 
