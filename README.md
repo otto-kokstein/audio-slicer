@@ -4,6 +4,10 @@
 
 A tool for slicing an audio file into individual parts based on specific times, e.g. a music album audio file into individual songs based on specific song start times.
 
+## Requirements
+
+The only required external module is pydub. The tool was tested with pydub version **0.25.1**.
+
 ## How to slice
 
 ### 1. Input directory
