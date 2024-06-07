@@ -55,7 +55,7 @@ On each line, replace **only** the text between the quotation marks.
   ```
   When defining a custom pattern, use the keyword **song_number** for the audio part's number, **song_name** for its name and **start_time** for its start time.
 
-  **All audio parts in the `songs.txt` file should be defined with the same pattern.**
+  **All audio parts in the `songs.txt` file must be defined with the same pattern.**
   
   Note: You can use words and symbols in the audio parts definitions and patterns, e.g. like this:
   Audio part definition:
