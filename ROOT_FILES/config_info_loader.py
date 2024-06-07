@@ -14,8 +14,10 @@ def load_config_info() -> Dict[str, str]:
         dict_key: str = line[: line.find(":")]
         dict_value: str = line[line.find('"') + 1 : line.rfind('"')]
 
-        if len(dict_value) == 0:
-            raise ValueError(f"No value for key \"{dict_key}\" in config.txt!")
+        if len(dict_value) == 0 and (
+            dict_key == "Audio Filename" or dict_key == "Song Pattern"
+        ):
+            raise ValueError(f'No value for key "{dict_key}" in config.txt!')
 
         config_info_dict[dict_key] = dict_value
 
