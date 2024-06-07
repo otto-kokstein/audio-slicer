@@ -6,7 +6,7 @@ A tool for slicing an audio file into individual parts based on specific times, 
 
 ## Requirements
 
-The only required external module is pydub. The tool was tested with pydub version **0.25.1**.
+The only required external module is pydub. The tool was tested with Python version **3.11.0** and pydub version **0.25.1**.
 
 ## How to slice
 
