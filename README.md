@@ -16,7 +16,7 @@ To slice an audio file, paste it into the `input` directory. If you want the new
 
 ### 2. Definition of audio parts
 
-Next, open `songs.txt`. Each audio part must occupy exactly one line. The line must include the audio part's number, name and the time at which it begins in the original large audio file (in the standard MM:SS or HH:MM:SS format).
+Next, open `songs.txt`. Each audio part must occupy exactly one line. The line **can** include the audio part's number and **must** include its name and the time at which it begins in the original large audio file (in the standard MM:SS or HH:MM:SS format).
 
 The audio part definitions in the `songs.txt` file should look like this (with your own custom names and times):
 
@@ -25,6 +25,15 @@ The audio part definitions in the `songs.txt` file should look like this (with y
 2 - Dolor Sit 07:32
 3 - Amet Consectetur 58:17
 4 - Adipiscing 02:03:21
+```
+
+or
+
+```
+00:00 Lorem Ipsum
+07:32 Dolor Sit
+58:17 Amet Consectetur
+02:03:21 Adipiscing
 ```
 
 ### 3. Config
@@ -53,7 +62,15 @@ On each line, replace **only** the text between the quotation marks.
   ```
   song_number - song_name start_time
   ```
-  When defining a custom pattern, use the keyword **song_number** for the audio part's number, **song_name** for its name and **start_time** for its start time.
+  If the audio part definition looked like this:
+  ```
+  00:00 Lorem Ipsum
+  ```
+  then, the *Song Pattern* value would have to look this:
+  ```
+  start_time song_name
+  ```
+  When defining a custom pattern, use the keyword **song_number** for the audio part's number (optional), **song_name** for its name and **start_time** for its start time (both required).
 
   **All audio parts in the `songs.txt` file must be defined with the same pattern.**
   
