@@ -15,10 +15,10 @@ def slice_audio() -> None:
     )
 
     # New directory to songs
-    SONGS_DIRECTORY_PATH: str = str(
-        Path(ROOT_PATH, f"output/{CONFIG_INFO['Album Title']}").resolve()
-    ) if CONFIG_INFO['Album Title'] != "" else str(
-        Path(ROOT_PATH, f"output/").resolve()
+    SONGS_DIRECTORY_PATH: str = (
+        str(Path(ROOT_PATH, f"output/{CONFIG_INFO['Album Title']}").resolve())
+        if CONFIG_INFO["Album Title"] != ""
+        else str(Path(ROOT_PATH, f"output/").resolve())
     )
 
     # Create new directory for songs if it doesn't already exist
@@ -41,7 +41,9 @@ def slice_audio() -> None:
                 "artist": CONFIG_INFO["Album Artist(s)"],
                 "album": CONFIG_INFO["Album Title"],
             },
-            cover=str(Path(ROOT_PATH, f"input/{CONFIG_INFO['Cover Art Filename']}").resolve())
+            cover=str(
+                Path(ROOT_PATH, f"input/{CONFIG_INFO['Cover Art Filename']}").resolve()
+            ),
         )
 
     print("Audio slicing finished successfully.")
