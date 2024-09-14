@@ -102,4 +102,4 @@ The audio parts created by the tool will be located in the `output` directory (i
 
 Thank you for using my tool.
 
-If you find a bug, feel free to create a pull request. If you'd like help, feel free to contact me.
+If you find a bug, feel free to create a pull request or a bug report. If you'd like help, feel free to contact me.
